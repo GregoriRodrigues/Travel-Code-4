@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+   <link rel="stylesheet" href="assets/css/style.css" />	
+    <title>Travel Code</title>
+</head>
+
+<body>
+    <!-- INICIO MENU -->
+    <header>
+        <nav>
+            <p>Travel Code</p>
+            <ul>
+                <li><a href="index-Travel.html">HOME</a></li>
+                <li><a href="destinos.html">DESTINOS</a></li>
+                <li><a href="#promocoes">PROMOÇÕES</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+        <!---------- FIM MENU --------->
+
+        <div id="home" class="header-content">
+            <h1><span>CAPADÓCIA</span></h1>
+            <h3>Um lugar dos sonhos e maravilhas!</h3>
+            <p>Descubra a mágica dessa região única, onde balões coloridos dançam nos céus, formações rochosas
+                impressionantes contam histórias antigas e experiências inesquecíveis aguardam por você.</p>
+            <button>
+                <a href="destinos.html" class="bota-saiba">Saiba Mais</a>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- INICIO DESTINO - Formulário de buscar voos -->
+    <section id="form-voo" class="form-wrapper">
+        <form class="form-container">
+            <div class="form-row">
+                <h2>Passagens Aéreas</h2>
+                <div class="form-group">
+                    <label>Tipo de Viagem</label>
+                    <div class="radio-buttons">
+                        <label>
+                            <input type="radio" name="trip-type" value="round-trip" checked> Ida e Volta
+                        </label>
+                        <label>
+                            <input type="radio" name="trip-type" value="one-way"> Somente Ida
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Origem</label>
+                    <input type="text" name="origin" placeholder="Origem">
+                </div>
+                <div class="form-group">
+                    <label>Destino</label>
+                    <input type="text" name="destination" placeholder="Destino">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Data de Ida</label>
+                    <input type="date" name="departure-date">
+                </div>
+                <div class="form-group">
+                    <label>Data de Volta</label>
+                    <input type="date" name="return-date">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Número de Passageiros</label>
+                    <input type="number" name="passengers" min="1" max="10">
+                </div>
+            </div>
+            <div class="form-row">
+                <button type="submit">Vamos Voar</button>
+            </div>
+        </form>
+    </section>
+    <!-- FIM DESTINO - Formulário de buscar voos -->
+
+
+   <!-----------------------------------------------Inicio PACOTES -------------------------------------------------------->
+    <section id="promocoes" class="pacotes">
+        <h1 class="titulo-pacotes"> Promoções<!-- Conheça as Maravilhas do Velho Continente--> </h1>
+        <div class="pacotes-cards">
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <P>Promoção</P>
+                </div>
+
+                <div class="card-tag card-tag-preco">
+                    <P>R$ 5.900,00</P>
+                </div>
+                <img class="card-imagem1" src="./assets/img/dubai3.jpg">
+                <div class="card-content">
+                    <h1> Dubai - Pacote 5 noites </h1>
+                    <ul>
+                        <li> <i data-feather="coffee"></i> Café da manhã incluso </li>
+                        <li> <i data-feather="wifi"></i> Wi-Fi</li>
+                        <li> <i data-feather="tv"></i> TV a cabo</li>
+                        <button class="btn-saiba"><a href="#promocoes"></a>Saiba Mais</button>
+                    </ul>
+                </div>
+            </div>
+            <!-- Fim Dubai  -->
+
+            <!-- Começo Egito   -->
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <P>Promoção</P>
+                </div>
+
+                <div class="card-tag card-tag-preco">
+                    <P>R$ 3.800,00</P>
+                </div>
+                <img class="card-imagem1" src="./assets/img/egito.jpg">
+                <div class="card-content">
+                    <h1> Egito - Pacote 8 noites </h1>
+                    <ul>
+                        <li> <i data-feather="coffee"></i> Café da manhã incluso </li>
+                        <li> <i data-feather="wifi"></i> Wi-Fi</li>
+                        <li> <i data-feather="tv"></i> TV a cabo</li>
+                        <button class="btn-saiba"><a href="destinos.html"></a>Saiba Mais</button>
+                    </ul>
+                </div>
+            </div>
+             <!-- Fim  Egito   -->
+
+             <!-- Começo  Grecia   -->
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <P>Promoção</P>
+                </div>
+
+                <div class="card-tag card-tag-preco">
+                    <P>R$ 3.900,00</P>
+                </div>
+                <img class="card-imagem1" src="./assets/img/grecia.jpg">
+                <div class="card-content">
+                    <h1> Grécia - Pacote 5 noites </h1>
+                    <ul>
+                        <li> <i data-feather="coffee"></i> Café da manhã incluso </li>
+                        <li> <i data-feather="wifi"></i> Wi-Fi</li>
+                        <li> <i data-feather="tv"></i> TV a cabo</li>
+                        <button class="btn-saiba"><a href="destinos.html"></a>Saiba Mais</button>
+                    </ul>
+                </div>
+                 <!-- Fim  Grecia   -->
+            </div>
+            <!-- Começo Paris   -->
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <P>Promoção</P>
+                </div>
+
+                <div class="card-tag card-tag-preco">
+                    <P>R$ 3.500,00</P>
+                </div>
+                <img class="card-imagem1" src="./assets/img/paris.jpg">
+                <div class="card-content">
+                    <h1>Paris - Pacote 5 noites </h1>
+                    <ul>
+                        <li> <i data-feather="coffee"></i> Café da manhã incluso </li>
+                        <li> <i data-feather="wifi"></i> Wi-Fi</li>
+                        <li> <i data-feather="tv"></i> TV a cabo</li>
+                        <button class="btn-saiba"> Saiba Mais</button>
+                    </ul>
+                </div>
+            </div>
+            <!-- Fim Paris   -->
+
+            <!-- Começo Sydnei   -->
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <P>Promoção</P>
+                </div>
+
+                <div class="card-tag card-tag-preco">
+                    <P>R$ 2.900,00</P>
+                </div>
+                <img class="card-imagem1" src="./assets/img/sydney.jpg">
+                <div class="card-content">
+                    <h1> Sydney - Pacote 7 noites </h1>
+                    <ul>
+                        <li> <i data-feather="coffee"></i> Café da manhã incluso </li>
+                        <li> <i data-feather="wifi"></i> Wi-Fi</li>
+                        <li> <i data-feather="tv"></i> TV a cabo</li>
+                        <button class="btn-saiba"><a href="destinos.html"></a>Saiba Mais</button>
+                    </ul>
+                </div>
+            </div>
+            <!-- Fim Sydnei-->
+
+            <!-- Começo Singapura   -->
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <P>Promoção</P>
+                </div>
+
+                <div class="card-tag card-tag-preco">
+                    <P>R$ 5.500,00</P>
+                </div>
+                <img class="card-imagem1" src="./assets/img/singapura.jpg">
+                <div class="card-content">
+                    <h1> Singapura - 10 noites </h1>
+                    <ul>
+                        <li> <i data-feather="coffee"></i> Café da manhã incluso </li>
+                        <li> <i data-feather="wifi"></i> Wi-Fi</li>
+                        <li> <i data-feather="tv"></i> TV a cabo</li>
+                        <button class="btn-saiba"> Saiba Mais</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------------------------------------------------------------FIM PACOTES-------------------------------------------------------->
+
+    <!---------------------------------- Começo Serviços---------------------->
+    <section id="servicos" class="servicos">
+        <h1 class="titulo-servicos">Serviços</h1>
+        <div class="servicos-cards">
+            <div class="card">
+                <i data-feather="map"></i>
+
+                <div class="card-content">
+                    <h3>Tour Guiados</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mi consectetur eu.
+                        Proin cursus velit a ipsum volutpat, a tincidunt mi feugiat.Sed ac augue at neque faucibus
+                        tincidunt nec nec lorem. Nulla eu bibendum neque.</p>
+                </div>
+                <button>Saiba Mais</button>
+
+            </div>
+
+            <div class="card">
+                <i data-feather="camera"></i>
+                <div class="card-content">
+                    <h3>Fotografia Profissional</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mi consectetur eu.
+                        Proin cursus velit a ipsum volutpat, a tincidunt mi feugiat.Sed ac augue at neque faucibus
+                        tincidunt nec nec lorem. Nulla eu bibendum neque.</p>
+                </div>
+                <button>Saiba Mais</button>
+            </div>
+
+            <div class="card">
+                <i data-feather="navigation"></i>
+                <div class="card-content">
+                    <h3>Aluguel de veículos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mi consectetur eu.
+                        Proin cursus velit a ipsum volutpat, a tincidunt mi feugiat.Sed ac augue at neque faucibus
+                        tincidunt nec nec lorem.Nulla eu bibendum neque.</p>
+                </div>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+    </section> <!------------------------ FIM - Serviços---------------------->
+
+
+    <!------------------------- INICIO - FALE CONOSCO ---------------------->
+    <section id="fale-conosco" class="fale-conosco">
+        <h1 class="titulo-fale-conosco">Fale Conosco</h1>
+        <div class="fale-conosco-form">
+            <form action="/submit-contact" method="post">
+                <div class="form-group">
+                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+                    <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+                </div>
+                <div class="form-group full">
+                    <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                </div>
+                <div class="form-group full">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-------------------------- FIM - FALE CONOSCO ---------------------->
+
+
+    <!---------------------- INICIO - RODAPÉ ----------------------->
+    <footer id="contato">
+        <section id="contato" class="contato">
+            <h1 class="titulo-contatos">Contato</h1>
+            <div class="contato">
+                <div class="card">
+                    <footer>
+                        <span class "footer-logo">Travel Code</span>
+                        <p>
+                        <div><i data-feather="phone"></i>
+                            <i data-feather="github"></i>
+                            <i data-feather="instagram"></i>
+                            <i data-feather="facebook"></i>
+                        </div>
+                        </p>
+                        <script>
+                            feather.replace()
+                        </script>
+                        <p class="footer-text">Desenvolvido por Gregory Rodrigues &copy; 2023</p>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!------------------------FIM - RODAPÉ ----------------------->
+    <script>
+        feather.replace();
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
